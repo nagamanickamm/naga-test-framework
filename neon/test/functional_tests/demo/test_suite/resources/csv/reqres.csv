@@ -1,0 +1,3 @@
+scenario,name,job,number,Empty,flag
+scenario1,morpheus,leader,0.01,null,true
+scenario2,Alex,wrong,1,empty,false

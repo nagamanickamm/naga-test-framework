@@ -1,0 +1,50 @@
+<html><head></head><body>
+<h1><span style="color:#27ae60"><span style="font-family:Comic Sans MS,cursive">Feature =>  Json Utilities</span></span></h1>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Compare values of two similar JSON objects</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Setup two JSON objects</span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Compare two JSON objects</span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Compare two Json Arrays without order</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Provided 2 Json array of different json order</span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Compare given Json arrays</span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Convert step table to Json array</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Provided a inline table data</span></span></span></li>
+<tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;Header1</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;Header2</td>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;data11 </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;data21 </td>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;data12 </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;data22 </td>
+<tr></table></tbody><li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Read table as Json array</span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Insert values into Json</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Provided json model and input from csv "scenario1" with "/test_suite/resources/csv/reqres.csv"</span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Insert values into json model</span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Map column names into given Json</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Given Response Json</span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Set mapping the columns from response to database columns</span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Map response json and validate output</span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Convert dictionary to class</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Convert dictionary to class</span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Dictionary should be converted to class with correct data types</span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Search dictionary by value</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: unit</span></span></p><table style="width:500px;margin: 35px;"><tbody><tr><th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;search</th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;returned</th>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;1     </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;one     </td>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;2     </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;two     </td>
+<tr></table></tbody><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Find dictionary key by value <strong style="color:#A10707;font-size:14px">search</strong></span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Correct Key is <strong style="color:#A10707;font-size:14px">returned</strong></span></span></span></li>
+</body></html>
