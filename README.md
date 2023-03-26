@@ -1,6 +1,6 @@
 
-Neon Test Framework
-Neon Test Framework is a test automation framework built using Gauge and Selenium for web-based applications. It uses Python as the primary programming language and supports the creation and execution of tests for multiple browsers and platforms.
+Naga Test Framework
+Naga Test Framework is a test automation framework built using Gauge and Selenium for web-based applications. It uses Python as the primary programming language and supports the creation and execution of tests for multiple browsers and platforms.
 
 Tool Setup
 To use Neon Test Framework, you need to have the following tools installed on your system:
