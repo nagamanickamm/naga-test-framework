@@ -1,0 +1,1 @@
+pylint (Get-ChildItem -Path .\ -Filter *.py -Recurse -File -Name) --disable=E0213,E0211,E1121,E1101,I110

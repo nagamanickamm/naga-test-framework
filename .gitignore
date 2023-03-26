@@ -1,0 +1,29 @@
+# Gauge - metadata dir
+.gauge
+
+# Gauge - log files dir
+logs
+
+# Gauge - reports dir
+reports
+
+# Gauge - python compiled files
+*.pyc
+
+# VS code - settings
+*.vscode
+
+*.py.json
+
+
+*egg*
+
+dist/*
+
+src/neon_test_framework.egg-info/*
+
+build/lib/*
+
+build/bdist*
+
+env/*

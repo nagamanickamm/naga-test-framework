@@ -1,0 +1,79 @@
+trigger:
+  - main
+
+variables:
+  branch: sampleBranch
+
+jobs:
+  - job: Functional_Test
+    displayName: Setup and Test
+    pool:
+      name: Neon Windows Builds
+
+    steps:
+      - task: PipAuthenticate@1
+        inputs:
+          artifactFeeds: "project1/myTestFeed1,Neon"
+        displayName: "Pip Authenticate"
+
+      - checkout: self
+      - task: PowerShell@2
+        inputs:
+          targetType: "filePath"
+          filePath: $(System.DefaultWorkingDirectory)\scripts\azure\setup_tools.ps1
+        displayName: "Setup Tools"
+
+      - task: PowerShell@2
+        inputs:
+          targetType: "filePath"
+          filePath: $(System.DefaultWorkingDirectory)\scripts\azure\run_test.ps1
+        displayName: "Unit Test"
+
+      - task: PublishBuildArtifacts@1
+        condition: always()
+        inputs:
+          pathToPublish: $(System.DefaultWorkingDirectory)\neon\test\functional_tests\demo\reports
+          artifactName: reports
+        displayName: Publish Unit test Report
+
+      - task: PublishBuildArtifacts@1
+        condition: always()
+        inputs:
+          pathToPublish: $(System.DefaultWorkingDirectory)\neon\test\functional_tests\demo\logs
+          artifactName: logs
+        displayName: Publish Unit test logs
+
+      - task: PowerShell@2
+        inputs:
+          targetType: "filePath"
+          filePath: $(System.DefaultWorkingDirectory)\scripts\azure\create_package.ps1
+        displayName: "Create Package"
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: $(System.DefaultWorkingDirectory)\dist
+          artifactName: main
+        displayName: Publish Framework to Framework to Build
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: $(System.DefaultWorkingDirectory)\dependencies
+          artifactName: wheel
+        displayName: Publish Dependencies to Build
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: $(System.DefaultWorkingDirectory)\neon\requirements.txt
+          artifactName: wheel
+        displayName: Publish requirements to Build
+
+      - task: TwineAuthenticate@1
+        inputs:
+          artifactFeed: Neon
+        displayName: Twine Authenticate
+
+      - task: PowerShell@2
+        inputs:
+          targetType: "inline"
+          script: C:\Python310\python -m twine upload -r Neon --config-file $(PYPIRC_PATH) dist/*.whl --non-interactive --skip-existing --verbose
+        displayName: Publish neon-test-framework

@@ -1,0 +1,44 @@
+<html><head></head><body>
+<h1><span style="color:#27ae60"><span style="font-family:Comic Sans MS,cursive">Feature =>  List Utilities</span></span></h1>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Find partial text inside a list</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: ListUtils.contains_partial_text</span></span></p><table style="width:500px;margin: 35px;"><tbody><tr><th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;text     </th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;list     </th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;matched</th>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search   </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search,me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;True   </td>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search_me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search,me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;False  </td>
+<tr></table></tbody><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Search all <strong style="color:#A10707;font-size:14px">list</strong> items matching the <strong style="color:#A10707;font-size:14px">text</strong></span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Got the list <strong style="color:#A10707;font-size:14px">matched</strong></span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Is any item on list is present in the text</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: ListUtils.is_any_present</span></span></p><table style="width:500px;margin: 35px;"><tbody><tr><th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;list     </th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;text     </th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;matched</th>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search,me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search   </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;True   </td>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search,me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;serach_m</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;False  </td>
+<tr></table></tbody><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Search any <strong style="color:#A10707;font-size:14px">list</strong> items matching in <strong style="color:#A10707;font-size:14px">text</strong></span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Got the result <strong style="color:#A10707;font-size:14px">matched</strong></span></span></span></li>
+<br></ul></blockquote></div>
+<h3><span style="color:#3498db"><span style="font-family:Comic Sans MS,cursive"><span >Scenario => <span style="text-decoration:underline;border-bottom: 1px solid #000;"> Is all item on list is present in the text</span></span></span></span></h3>
+<p><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#999999">tags: ListUtils.is_all_present</span></span></p><table style="width:500px;margin: 35px;"><tbody><tr><th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;list     </th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;text     </th>
+<th style="border: 1px solid black; background-color:#D6EEEE; color:#A10707; font-size:16px border-style: dotted;text-align: center;">&nbsp;matched</th>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search,me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search   </td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;False  </td>
+<tr><tr><td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search,me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;search_me</td>
+<td style="border: 1px solid black;border-style: dotted;text-align: center;">&nbsp;True   </td>
+<tr></table></tbody><div><h4><span style="color:#8e44ad;margin: 35px;font-family:Georgia,serif;"><u>Steps:</u></span></span></h4><blockquote style="background-color: #DFFADE; border-left: 8px solid #4ED849; width: 70%;"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><ul><br>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Search all <strong style="color:#A10707;font-size:14px">list</strong> items matching in <strong style="color:#A10707;font-size:14px">text</strong></span></span></span></li>
+<li><span style="font-size:15px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#2c3e50"> Got the result <strong style="color:#A10707;font-size:14px">matched</strong></span></span></span></li>
+</body></html>
